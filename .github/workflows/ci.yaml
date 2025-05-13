@@ -1,0 +1,23 @@
+name: Say hello when triggered
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - dev
+  pull_request:
+    types: [closed, opened, reopened, synchronize]
+    branches: 
+      - main
+      - dev
+
+jobs:
+  say-hello:
+    name: Say hello in the logs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Log hello
+        run: echo "Hello from ci.yaml"
