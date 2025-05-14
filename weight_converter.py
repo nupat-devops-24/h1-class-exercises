@@ -1,4 +1,4 @@
-"""This module converts weights from kilogramms to poundsza"""
+"""This module converts weights from kilogramms to pounds"""
 
 
 def weight_converter(user_weight):
