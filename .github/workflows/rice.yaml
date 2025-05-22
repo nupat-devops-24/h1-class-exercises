@@ -1,0 +1,39 @@
+name: Jollof Rice Cooking Guide
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+
+jobs:
+  welcome:
+    name: Welcome the user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Run the welcome message script
+        run: ./shell.sh
+
+  cook:
+    name: Prepare the food
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Make sure all ingredients and cooking tools are ready"
+      - name: Step 2
+        run: echo "Boil the rice for 15 minutes"
+      - name: Step 3
+        run: echo "Add some seasoning after the rice softens"
+
+  serve:
+    name: Serve the food
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 4
+        run: echo "Scoop some rice into a plate"
+      - name: Step 5
+        run:
+          echo "Place the served rice on a dining table, with cutlery next to
+          the servings"
