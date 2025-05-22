@@ -1,0 +1,28 @@
+name: Run Automate-Shell-Script
+
+on:
+  pull_request:
+    branches:
+      - main
+  push: 
+
+jobs:
+  welcome:
+    name: run-automate.sh-shell-script
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: run automate.shell
+        run: chmod +x .automate.sh./
+
+  print_message: 
+    name: run-automate.sh-shell-script
+    runs-on: ubuntu-latest
+    steps:
+      - name: print a message
+        run: echo "the automation step is complete. Have a wonderful day ahead!"
+
+
+
