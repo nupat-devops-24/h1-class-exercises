@@ -1,0 +1,28 @@
+name: practice worlflow
+
+on:
+  pull_request:
+    banches:
+      -main
+  push:
+
+jobs:
+  welcome:
+    name: Welcome the user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run automate
+        run: ./automate.sh
+
+  Errand:
+    name: Send message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Go and practice linux"
+
+
+
+    
+
+
