@@ -24,17 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
-        run: echo "Go and practice linux"
-
-  Job3:
-    name: jobless
-    runs-on: ubuntu-latest
-    steps:
-      - name: step
-        run: ./shell.sh
-
-
-
+        run: echo "Go and practice linux
     
 
 
