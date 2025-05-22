@@ -25,7 +25,7 @@ jobs:
       - name: Step 1
         run: echo "make sure all ingredients are available "
       - name: Step 2
-        run: echo"boil the beans for 30 minutes"
+        run: echo "boil the beans for 30 minutes"
       - name: Step 3
         run: echo "add seasoning"
   
