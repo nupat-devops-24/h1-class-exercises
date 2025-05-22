@@ -2,7 +2,7 @@ name: king worlflow
 
 on:
   pull_request:
-    banches:
+    branches:
       - main
   push:
     branches-ignore:
