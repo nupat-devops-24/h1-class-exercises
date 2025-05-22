@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: run automate.shell
-        run: ./automate.sh
+        run: chmod +x automate.sh && ./automate.sh
 
   print_message: 
     name: run-automate.sh-shell
