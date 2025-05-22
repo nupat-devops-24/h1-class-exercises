@@ -11,16 +11,16 @@ on:
 jobs: 
   welcome:
     name: welcome the user
-    runs-on: automate.sh
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: run the welcome message script
-        run: automate.sh
+        run: chmod +x automate.sh && ./automate.sh
   
   cook:
     name: Prepare the food
-    runs-on: ubuntu latest 
+    runs-on: ubuntu-latest 
     steps:
       - name: Step 1
         run: echo "make sure all ingredients are available "
