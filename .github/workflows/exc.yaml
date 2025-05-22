@@ -1,10 +1,13 @@
-name: practice worlflow
+name: king worlflow
 
 on:
   pull_request:
     banches:
-      -main
+      - main
   push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
 
 jobs:
   welcome:
