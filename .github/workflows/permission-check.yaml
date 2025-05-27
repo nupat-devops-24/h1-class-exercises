@@ -7,6 +7,9 @@ on:
   push:
     branches-ignore: 
       - main
+  schedule:
+    - cron: '18 10 * * 2' # Every Tuesday at 10:18 UTC
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
   welcome:
