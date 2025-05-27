@@ -1,0 +1,41 @@
+name: Beans Recipe
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches-ignore:
+      - main
+
+jobs: 
+  welcome:
+    name: welcome the user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: run the welcome message script
+        run: chmod +x automate.sh && ./automate.sh
+  
+  cook:
+    name: Prepare the food
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Step 1
+        run: echo "make sure all ingredients are available "
+      - name: Step 2
+        run: echo"boil the beans for 30 minutes"
+      - name: Step 3
+        run: echo "add seasoning"
+  
+  serve:
+    name: serve the food
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Step 4
+        run: echo "serve the beans into the plate"
+      - name: Step 5
+        run:
+          echo "Place the served beans on a dining table, with cutlery next to
+          the servings"
